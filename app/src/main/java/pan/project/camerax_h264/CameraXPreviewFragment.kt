@@ -45,7 +45,6 @@ class CameraXPreviewFragment : Fragment() {
         streamManager = StreamManager(
             requireContext(),
             viewLifecycleOwner,
-            binding.prewview,
             cameraPreviewInterface,
             aacInterface
         )

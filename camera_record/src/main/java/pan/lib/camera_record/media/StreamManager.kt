@@ -1,7 +1,6 @@
 package pan.lib.camera_record.media
 
 import android.content.Context
-import androidx.camera.view.PreviewView
 import androidx.lifecycle.LifecycleOwner
 import pan.lib.camera_record.media.audio.AacInterface
 import pan.lib.camera_record.media.audio.AudioRecorder
@@ -14,14 +13,12 @@ import pan.lib.camera_record.media.video.CameraRecorder
  *
  * @param context 应用上下文。
  * @param lifecycleOwner 用于管理摄像头生命周期的 LifecycleOwner。
- * @param previewView 提供摄像头预览的 PreviewView。
  * @param cameraPreviewInterface 摄像头预览接口
  * @param aacInterface AAC音频接口
  */
 open class StreamManager(
     private val context: Context,
     private val lifecycleOwner: LifecycleOwner,
-    private val previewView: PreviewView,
     private val cameraPreviewInterface: CameraPreviewInterface,
     private val aacInterface: AacInterface
 ) {
